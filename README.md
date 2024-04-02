@@ -6,8 +6,14 @@ This C++ program implements a memory management process that translates logical 
 
 # Functionality
 The memory management algorithm has the following functionality:
-1. randomlogicalAddress function - randomly generates a logical address. This logical address will be used to calculate the physical address, page number, and offset.
-2. 
+1. The page size is 1024 bytes, the frame size is 1024 bytes, the number of pages in logical memory is 16, and the number of frames in physical memory is 8.
+2. randomlogicalAddress function - randomly generates a logical address. This logical address will be used to calculate the physical address, page number, and offset.
+3. Up to 10 logical addressees will be generated with their respective physical address, page number, and offset.
+4. if the frame number is -1, this indicates a page fault.
+5. Physical address calculated as: physicalAddress = frameNumber * FRAME_SIZE + offset.
+6. Page number calculated as: pageNumber = logicalAddress / PAGE_SIZE.
+7. Offset calculated as: offset = logicalAddress % PAGE_SIZE.
+8. All logical addresses, physical addresses, page numbers, and offsets will be displayed to the user in hexadecimal format.
 
 # Instructions for Execution
 1. Run this program in C++.
