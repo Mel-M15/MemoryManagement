@@ -19,5 +19,5 @@ The memory management algorithm has the following functionality:
 # Instructions for Execution
 1. Run this program in C++.
 2. There is no user input to be entered to run the program.
-3. Run the program and verify that up to 10 or less logical addresses can be generated with their respective physical addresses, page numbers, and offsets calculated.
+3. Run the program and verify that up to 10 or less logical addresses will be generated with their respective physical addresses, page numbers, and offsets calculated.
 4. Optional: Run the program many more times to verify that logical addresses are randomly generated along with their calculated physical addresses, page numbers, and offsets.
